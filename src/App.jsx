@@ -1,7 +1,21 @@
 import { useState } from "react";
 
-function App() {
-  return <></>;
+function Square() {
+  return <button className="square">X</button>;
 }
 
-export default App;
+export default function board() {
+  return (
+    <div className="board">
+      <Square />
+      <Square />
+      <Square />
+      <Square />
+      <Square />
+      <Square />
+      <Square />
+      <Square />
+      <Square />
+    </div>
+  );
+}
